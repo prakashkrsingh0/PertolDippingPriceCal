@@ -5,4 +5,12 @@ Basically, User will enter dipping height, some Internal calculation will be per
 
 this Project is done for my 1st costumer **Sainaik Filling Station, Rajasthan**
 
+Logo Of Bharat Petrolium 
 ![test](./src/Assets/BPLogo.png)
+
+HomePage
+![test](./src/Assets/Start_App.jpeg)
+Petrol Quantity
+![test](./src/Assets/petrol_Quantity_In_Liter.jpeg)
+Deisel Quantity 
+![test](./src/Assets/Diesel_Quantity_in_liter.jpeg)

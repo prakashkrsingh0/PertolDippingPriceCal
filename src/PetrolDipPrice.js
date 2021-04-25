@@ -483,7 +483,7 @@ export default class PetrolDipPrice extends Component {
         </View> */}
         <View>
           <TextInput
-            placeholder="Enter Petrol Dipping height"
+            placeholder="Enter Dip Value"
             placeholderTextColor="white"
             blurOnSubmit={true}
             fontSize={23}
@@ -534,7 +534,7 @@ export default class PetrolDipPrice extends Component {
 
   styles = StyleSheet.create({
     ConvertLengthToLiter: {
-      backgroundColor: '#1507e3',
+      backgroundColor: '#92D293',
       flex: 1,
     },
     contactTextStyle: {
