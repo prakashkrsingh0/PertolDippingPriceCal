@@ -9,8 +9,10 @@ Logo Of Bharat Petrolium
 ![test](./src/Assets/BPLogo.png)
 
 HomePage
-![test](./src/Assets/Start_App.jpeg)
+![test](./src/Assets/Start_App.png)
+Input Page
+![test](./src/Assets/inputPage.png)
 Petrol Quantity
-![test](./src/Assets/petrol_Quantity_In_Liter.jpeg)
+![test](./src/Assets/petrol_Quantity_In_Liter.png)
 Deisel Quantity 
-![test](./src/Assets/Diesel_Quantity_in_liter.jpeg)
+![test](./src/Assets/Diesel_Quantity_in_liter.png)
