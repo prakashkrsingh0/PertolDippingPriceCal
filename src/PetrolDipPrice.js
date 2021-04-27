@@ -16,7 +16,8 @@ export default class PetrolDipPrice extends Component {
     this.state = {
       petrolHeight: null,
       petrolLiter: 'Total',
-      color: null,
+      color: false,
+      
     };
   }
   petrolDipQuantityArray = [
@@ -447,7 +448,7 @@ export default class PetrolDipPrice extends Component {
 
     this.setState({
       petrolLiter: totalCalculateVal,
-      color: '#3DBE29',
+      color: false,
     });
   };
   DesialValCal = () => {
@@ -464,7 +465,7 @@ export default class PetrolDipPrice extends Component {
 
     this.setState({
       petrolLiter: totalCalculateVal,
-      color: '#DDD101',
+      color: true,
     });
   };
 
@@ -507,27 +508,24 @@ export default class PetrolDipPrice extends Component {
             <Text style={this.styles.textTouchableStyle}>Diesel</Text>
           </TouchableOpacity>
 
-          <View style={this.styles.resultViewStyle,
-                {borderColor: this.state.color}}>
+          <View style={this.state.color?this.styles.resultViewPetrolStyle:this.styles.resultViewDeiselStyle}>
             <Text
-              style={
-                this.styles.resultViewTextStyle
-              }>
+              style={this.styles.resultViewTextStyle}>
               {this.state.petrolLiter}
             </Text>
           </View>
         </View>
-        <View>
+        {/* <View>
           <TouchableOpacity
             // onPress={() =>
             //   Linking.openURL('https://gyandham.wordpress.com/about-me/')
             // }
             >
             <Text style={this.styles.contactTextStyle}>
-              ______________________________  {/*contact to developer: prakash */}
+              ____________________
             </Text>
           </TouchableOpacity>
-        </View>
+        </View> */}
       </View>
     );
   }
@@ -538,9 +536,10 @@ export default class PetrolDipPrice extends Component {
       flex: 1,
     },
     contactTextStyle: {
-      color: 'white',
+      //color: 'white',
       fontSize: 24,
       justifyContent: 'center',
+      alignSelf:'center',
       margin: 24,
     },
     resultViewTextStyle: {
@@ -550,13 +549,25 @@ export default class PetrolDipPrice extends Component {
       textAlign: 'center',
       fontWeight: 'bold',
     },
-    resultViewStyle: {
-      width: 190,
+    resultViewPetrolStyle: {
+      width: "70%",
       height: 100,
       borderRadius: 80,
-      borderWidth: 40,
+      borderWidth: 1,
       justifyContent: 'center',
-      alignSelf: 'center'
+      alignSelf: 'center',
+      backgroundColor: '#DDD101',
+      marginBottom:100,
+    },
+    resultViewDeiselStyle: {
+      width: "70%",
+      height: 100,
+      borderRadius: 80,
+      borderWidth: 1,
+      justifyContent: 'center',
+      alignSelf: 'center',
+      backgroundColor:'#3DBE29',
+      marginBottom:100,
     },
     textTouchableStyle: {
       fontSize: 25,
